@@ -85,6 +85,6 @@ replace go.etcd.io/etcd => go.etcd.io/etcd v0.5.0-alpha.5.0.20201125193152-8a03d
 
 replace github.com/btcsuite/btcd => github.com/3nprob/btcd v0.22.0-beta.0.20210821075158-4f2d3fa1e593
 
-replace github.com/btcsuite/btcwallet => github.com/3nprob/btcwallet v0.12.1-0.20210821075949-9e76b57a00c0
+replace github.com/btcsuite/btcwallet => github.com/3nprob/btcwallet v0.12.1-0.20210821082034-4eb0a556189d
 
 go 1.15
