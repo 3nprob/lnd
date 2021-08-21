@@ -990,7 +990,7 @@ func Main(cfg *Config, lisCfg ListenerCfg, interceptor signal.Interceptor) error
 	// With all the relevant chains initialized, we can finally start the
 	// server itself.
 	if err := server.Start(); err != nil {
-		err := fmt.Errorf("unable to start server: %v", err)
+		err := fmt.Errorf("DERP! unable to start server: %v", err)
 		ltndLog.Error(err)
 		return err
 	}
