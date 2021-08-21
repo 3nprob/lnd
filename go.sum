@@ -4,6 +4,8 @@ github.com/3nprob/btcd v0.22.0-beta.0.20210821075158-4f2d3fa1e593/go.mod h1:9n5n
 github.com/3nprob/btcwallet v0.12.1-0.20210821075949-9e76b57a00c0/go.mod h1:mUTHnbupjg/eEwWHr0Sza12EHgoXRD6ldWFtiuHK+To=
 github.com/3nprob/btcwallet v0.12.1-0.20210821082034-4eb0a556189d h1:6OCMQN01w+ChU8E9f9zgW69UCMKnphKZifBJDtW5/Nw=
 github.com/3nprob/btcwallet v0.12.1-0.20210821082034-4eb0a556189d/go.mod h1:qjDudv3TWHcMxtJzruwx37Jte0KbHB7fSzLPHP1Q2vw=
+github.com/3nprob/btcwallet v0.12.1-0.20210821084540-8384d6cfa4da h1:6kE8Zouw9YuPILdynTgYpNSgJ+yao3sNhH7cglRwuwo=
+github.com/3nprob/btcwallet v0.12.1-0.20210821084540-8384d6cfa4da/go.mod h1:5uZKiyjzI8HQy0HTQdc/AvKhlFth2fmQb5WEOwjT/Hw=
 github.com/BurntSushi/toml v0.3.1 h1:WXkYYl6Yr3qBf1K79EBnL4mak0OimBfB0XUf9Vl28OQ=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/NebulousLabs/fastrand v0.0.0-20181203155948-6fb6489aac4e h1:n+DcnTNkQnHlwpsrHoQtkrJIO7CBx029fw6oR4vIob4=
