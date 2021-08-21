@@ -5,7 +5,7 @@ require (
 	github.com/NebulousLabs/fastrand v0.0.0-20181203155948-6fb6489aac4e // indirect
 	github.com/NebulousLabs/go-upnp v0.0.0-20180202185039-29b680b06c82
 	github.com/Yawning/aez v0.0.0-20180114000226-4dad034d9db2
-	github.com/btcsuite/btcd v0.21.0-beta.0.20210513141527-ee5896bad5be
+	github.com/btcsuite/btcd v0.22.0-beta.0.20210803133449-f5a1fb9965e4
 	github.com/btcsuite/btclog v0.0.0-20170628155309-84c8d2346e9f
 	github.com/btcsuite/btcutil v1.0.3-0.20210527170813-e2ba6805a890
 	github.com/btcsuite/btcutil/psbt v1.0.3-0.20210527170813-e2ba6805a890
@@ -82,5 +82,9 @@ replace git.schwanenlied.me/yawning/bsaes.git => github.com/Yawning/bsaes v0.0.0
 // Fix incompatibility of etcd go.mod package.
 // See https://github.com/etcd-io/etcd/issues/11154
 replace go.etcd.io/etcd => go.etcd.io/etcd v0.5.0-alpha.5.0.20201125193152-8a03d2e9614b
+
+replace github.com/btcsuite/btcd => github.com/3nprob/btcd v0.22.0-beta.0.20210821075158-4f2d3fa1e593
+
+replace github.com/btcsuite/btcwallet => github.com/3nprob/btcwallet v0.12.1-0.20210821075949-9e76b57a00c0
 
 go 1.15
