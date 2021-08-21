@@ -1498,7 +1498,7 @@ func (s *server) Start() error {
 	s.start.Do(func() {
 		if s.torController != nil {
 			if err := s.createNewHiddenService(); err != nil {
-				startErr = fmt.Errorf("createNewHiddenService: %v"+, err)
+				startErr = fmt.Errorf("createNewHiddenService: %v", err)
 				return
 			}
 			cleanup = cleanup.add(s.torController.Stop)
@@ -1511,7 +1511,7 @@ func (s *server) Start() error {
 
 		if s.hostAnn != nil {
 			if err := s.hostAnn.Start(); err != nil {
-				startErr = fmt.Errorf("hostAnn.Start: %v"+, err)
+				startErr = fmt.Errorf("hostAnn.Start: %v", err)
 				return
 			}
 			cleanup = cleanup.add(s.hostAnn.Stop)
@@ -1519,7 +1519,7 @@ func (s *server) Start() error {
 
 		if s.livelinessMonitor != nil {
 			if err := s.livelinessMonitor.Start(); err != nil {
-				startErr = fmt.Errorf("livenessMonitor.Start: %v"+, err)
+				startErr = fmt.Errorf("livenessMonitor.Start: %v", err)
 				return
 			}
 			cleanup = cleanup.add(s.livelinessMonitor.Stop)
@@ -1531,131 +1531,131 @@ func (s *server) Start() error {
 		// when the input for the funding transaction is spent in an
 		// attempt at an uncooperative close by the counterparty.
 		if err := s.sigPool.Start(); err != nil {
-			startErr = fmt.Errorf("sigPool.Start: %v"+, err)
+			startErr = fmt.Errorf("sigPool.Start: %v", err)
 			return
 		}
 		cleanup = cleanup.add(s.sigPool.Stop)
 
 		if err := s.writePool.Start(); err != nil {
-			startErr = fmt.Errorf("writePool.Start: %v"+, err)
+			startErr = fmt.Errorf("writePool.Start: %v", err)
 			return
 		}
 		cleanup = cleanup.add(s.writePool.Stop)
 
 		if err := s.readPool.Start(); err != nil {
-			startErr = fmt.Errorf("readPool.Start: %v"+, err)
+			startErr = fmt.Errorf("readPool.Start: %v", err)
 			return
 		}
 		cleanup = cleanup.add(s.readPool.Stop)
 
 		if err := s.cc.ChainNotifier.Start(); err != nil {
-			startErr = fmt.Errorf("cc.chainNotifier.Start: %v"+, err)
+			startErr = fmt.Errorf("cc.chainNotifier.Start: %v", err)
 			return
 		}
 		cleanup = cleanup.add(s.cc.ChainNotifier.Stop)
 
 		if err := s.channelNotifier.Start(); err != nil {
-			startErr = fmt.Errorf("channelNotifier.Start: %v"+, err)
+			startErr = fmt.Errorf("channelNotifier.Start: %v", err)
 			return
 		}
 		cleanup = cleanup.add(s.channelNotifier.Stop)
 
 		if err := s.peerNotifier.Start(); err != nil {
-			startErr = fmt.Errorf("peerNotifier.Start: %v"+, err)
+			startErr = fmt.Errorf("peerNotifier.Start: %v", err)
 			return
 		}
 		cleanup = cleanup.add(func() error {
 			return s.peerNotifier.Stop()
 		})
 		if err := s.htlcNotifier.Start(); err != nil {
-			startErr = fmt.Errorf("htlcNotifier.Start: %v"+, err)
+			startErr = fmt.Errorf("htlcNotifier.Start: %v", err)
 			return
 		}
 		cleanup = cleanup.add(s.htlcNotifier.Stop)
 
 		if err := s.sphinx.Start(); err != nil {
-			startErr = fmt.Errorf("sphinx.Start: %v"+, err)
+			startErr = fmt.Errorf("sphinx.Start: %v", err)
 			return
 		}
 		cleanup = cleanup.add(s.sphinx.Stop)
 
 		if s.towerClient != nil {
 			if err := s.towerClient.Start(); err != nil {
-				startErr = fmt.Errorf("towerClient.Start: %v"+, err)
+				startErr = fmt.Errorf("towerClient.Start: %v", err)
 				return
 			}
 			cleanup = cleanup.add(s.towerClient.Stop)
 		}
 		if s.anchorTowerClient != nil {
 			if err := s.anchorTowerClient.Start(); err != nil {
-				startErr = fmt.Errorf("anchorTowerClient.Start: %v"+, err)
+				startErr = fmt.Errorf("anchorTowerClient.Start: %v", err)
 				return
 			}
 			cleanup = cleanup.add(s.anchorTowerClient.Stop)
 		}
 
 		if err := s.htlcSwitch.Start(); err != nil {
-			startErr = fmt.Errorf("htlcSwitch.Start: %v"+, err)
+			startErr = fmt.Errorf("htlcSwitch.Start: %v", err)
 			return
 		}
 		cleanup = cleanup.add(s.htlcSwitch.Stop)
 
 		if err := s.sweeper.Start(); err != nil {
-			startErr = fmt.Errorf("sweeper.Start: %v"+, err)
+			startErr = fmt.Errorf("sweeper.Start: %v", err)
 			return
 		}
 		cleanup = cleanup.add(s.sweeper.Stop)
 
 		if err := s.utxoNursery.Start(); err != nil {
-			startErr = fmt.Errorf("utxoNursery.Start: %v"+, err)
+			startErr = fmt.Errorf("utxoNursery.Start: %v", err)
 			return
 		}
 		cleanup = cleanup.add(s.utxoNursery.Stop)
 
 		if err := s.chainArb.Start(); err != nil {
-			startErr = fmt.Errorf("chainArb.Start: %v"+, err)
+			startErr = fmt.Errorf("chainArb.Start: %v", err)
 			return
 		}
 		cleanup = cleanup.add(s.chainArb.Stop)
 
 		if err := s.breachArbiter.Start(); err != nil {
-			startErr = fmt.Errorf("breachArbiter.Start: %v"+, err)
+			startErr = fmt.Errorf("breachArbiter.Start: %v", err)
 			return
 		}
 		cleanup = cleanup.add(s.breachArbiter.Stop)
 
 		if err := s.authGossiper.Start(); err != nil {
-			startErr = fmt.Errorf("authGossiper.Start: %v"+, err)
+			startErr = fmt.Errorf("authGossiper.Start: %v", err)
 			return
 		}
 		cleanup = cleanup.add(s.authGossiper.Stop)
 
 		if err := s.chanRouter.Start(); err != nil {
-			startErr = fmt.Errorf("chanRouter.Start: %v"+, err)
+			startErr = fmt.Errorf("chanRouter.Start: %v", err)
 			return
 		}
 		cleanup = cleanup.add(s.chanRouter.Stop)
 
 		if err := s.fundingMgr.Start(); err != nil {
-			startErr = fmt.Errorf("fundingMgr.Start: %v"+, err)
+			startErr = fmt.Errorf("fundingMgr.Start: %v", err)
 			return
 		}
 		cleanup = cleanup.add(s.fundingMgr.Stop)
 
 		if err := s.invoices.Start(); err != nil {
-			startErr = fmt.Errorf("invoices.Start: %v"+, err)
+			startErr = fmt.Errorf("invoices.Start: %v", err)
 			return
 		}
 		cleanup = cleanup.add(s.invoices.Stop)
 
 		if err := s.chanStatusMgr.Start(); err != nil {
-			startErr = fmt.Errorf("chanStatusMgr.Start: %v"+, err)
+			startErr = fmt.Errorf("chanStatusMgr.Start: %v", err)
 			return
 		}
 		cleanup = cleanup.add(s.chanStatusMgr.Stop)
 
 		if err := s.chanEventStore.Start(); err != nil {
-			startErr = fmt.Errorf("chanEventStore.Start: %v"+, err)
+			startErr = fmt.Errorf("chanEventStore.Start: %v", err)
 			return
 		}
 		cleanup = cleanup.add(func() error {
@@ -1696,7 +1696,7 @@ func (s *server) Start() error {
 		}
 
 		if err := s.chanSubSwapper.Start(); err != nil {
-			startErr = fmt.Errorf("chanSubSwapper.Start: %v"+, err)
+			startErr = fmt.Errorf("chanSubSwapper.Start: %v", err)
 			return
 		}
 		cleanup = cleanup.add(s.chanSubSwapper.Stop)
@@ -1714,11 +1714,11 @@ func (s *server) Start() error {
 		// to ensure we don't reconnect to any nodes we no longer have
 		// open channels with.
 		if err := s.remoteChanDB.PruneLinkNodes(); err != nil {
-			startErr = fmt.Errorf("chanStateDB.PruneLinkNodes: %v"+, err)
+			startErr = fmt.Errorf("chanStateDB.PruneLinkNodes: %v", err)
 			return
 		}
 		if err := s.establishPersistentConnections(); err != nil {
-			startErr = fmt.Errorf("establishPersistetConnections: %v"+, err)
+			startErr = fmt.Errorf("establishPersistetConnections: %v", err)
 			return
 		}
 
@@ -1789,7 +1789,7 @@ func (s *server) Start() error {
 
 			bootstrappers, err := initNetworkBootstrappers(s)
 			if err != nil {
-				startErr = fmt.Errorf("initNetworkBootstrappers: %v"+, err)
+				startErr = fmt.Errorf("initNetworkBootstrappers: %v", err)
 				return
 			}
 
