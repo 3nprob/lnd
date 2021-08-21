@@ -10,6 +10,7 @@ github.com/3nprob/btcd v0.22.0-beta.0.20210821075158-4f2d3fa1e593/go.mod h1:9n5n
 github.com/3nprob/btcd v0.22.0-beta.0.20210821090831-d0116f866a18 h1:SCYRYkJRVqLQG/zVgfZvlfnLgpr9sIvgbSVEyZ5H9as=
 github.com/3nprob/btcd v0.22.0-beta.0.20210821090831-d0116f866a18/go.mod h1:9n5ntfhhHQBIhUvlhDvD3Qg6fRUj4jkN0VB8L8svzOA=
 github.com/3nprob/btcwallet v0.12.1-0.20210821112004-47935cc3f7ee/go.mod h1:ABtR9CrrBtEZLtU/XFFZTy/CnazKQqVC2ym/+sXYNeQ=
+github.com/3nprob/btcwallet v0.12.1-0.20210821115721-76eff1aac824 h1:hnFfht/Fz3QTHxlULgFWJ402gV4uw7x5fcBHYz1/P1E=
 github.com/3nprob/btcwallet v0.12.1-0.20210821115721-76eff1aac824/go.mod h1:KiE4E3ggjxbtMAYfA7rcNSVrNigfrY2+A8Z7Jy3isrg=
 github.com/BurntSushi/toml v0.3.1 h1:WXkYYl6Yr3qBf1K79EBnL4mak0OimBfB0XUf9Vl28OQ=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
