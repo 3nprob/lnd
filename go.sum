@@ -9,15 +9,8 @@ github.com/3nprob/btcd v0.22.0-beta.0.20210821075158-4f2d3fa1e593 h1:NE/kaLLRcov
 github.com/3nprob/btcd v0.22.0-beta.0.20210821075158-4f2d3fa1e593/go.mod h1:9n5ntfhhHQBIhUvlhDvD3Qg6fRUj4jkN0VB8L8svzOA=
 github.com/3nprob/btcd v0.22.0-beta.0.20210821090831-d0116f866a18 h1:SCYRYkJRVqLQG/zVgfZvlfnLgpr9sIvgbSVEyZ5H9as=
 github.com/3nprob/btcd v0.22.0-beta.0.20210821090831-d0116f866a18/go.mod h1:9n5ntfhhHQBIhUvlhDvD3Qg6fRUj4jkN0VB8L8svzOA=
-github.com/3nprob/btcwallet v0.12.1-0.20210821075949-9e76b57a00c0/go.mod h1:mUTHnbupjg/eEwWHr0Sza12EHgoXRD6ldWFtiuHK+To=
-github.com/3nprob/btcwallet v0.12.1-0.20210821082034-4eb0a556189d h1:6OCMQN01w+ChU8E9f9zgW69UCMKnphKZifBJDtW5/Nw=
-github.com/3nprob/btcwallet v0.12.1-0.20210821082034-4eb0a556189d/go.mod h1:qjDudv3TWHcMxtJzruwx37Jte0KbHB7fSzLPHP1Q2vw=
-github.com/3nprob/btcwallet v0.12.1-0.20210821084540-8384d6cfa4da h1:6kE8Zouw9YuPILdynTgYpNSgJ+yao3sNhH7cglRwuwo=
-github.com/3nprob/btcwallet v0.12.1-0.20210821084540-8384d6cfa4da/go.mod h1:5uZKiyjzI8HQy0HTQdc/AvKhlFth2fmQb5WEOwjT/Hw=
-github.com/3nprob/btcwallet v0.12.1-0.20210821093905-d7d3b8f6790b h1:zAx2SNgR/lQBV4LWxfwytQUtL0GCu51UVw4BrRqvfzk=
-github.com/3nprob/btcwallet v0.12.1-0.20210821093905-d7d3b8f6790b/go.mod h1:kVfp6BULKsrALLUkhCur3t/zI0nfOE0KW9iV+AXOcRw=
-github.com/3nprob/btcwallet v0.12.1-0.20210821112004-47935cc3f7ee h1:9M9Q/OQ5dV4PjsHYO++m/mN1zMdBKS8TczXokpvV4w8=
 github.com/3nprob/btcwallet v0.12.1-0.20210821112004-47935cc3f7ee/go.mod h1:ABtR9CrrBtEZLtU/XFFZTy/CnazKQqVC2ym/+sXYNeQ=
+github.com/3nprob/btcwallet v0.12.1-0.20210821115721-76eff1aac824/go.mod h1:KiE4E3ggjxbtMAYfA7rcNSVrNigfrY2+A8Z7Jy3isrg=
 github.com/BurntSushi/toml v0.3.1 h1:WXkYYl6Yr3qBf1K79EBnL4mak0OimBfB0XUf9Vl28OQ=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/NebulousLabs/fastrand v0.0.0-20181203155948-6fb6489aac4e h1:n+DcnTNkQnHlwpsrHoQtkrJIO7CBx029fw6oR4vIob4=
