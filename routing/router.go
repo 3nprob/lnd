@@ -804,11 +804,11 @@ func (r *ChannelRouter) syncGraphWithChain() error {
 		// the chainview for the particular block hash.
 		nextHash, err := r.cfg.Chain.GetBlockHash(int64(nextHeight))
 		if err != nil {
-			return err
+			return fmt.Errorf("failed getting block hash for height %d: %v", int64(nextHeight), err)
 		}
 		filterBlock, err := r.cfg.ChainView.FilterBlock(nextHash)
 		if err != nil {
-			return err
+			return fmt.Errorf("failed filtering block %s: %v", nextHash, err)
 		}
 
 		// We're only interested in all prior outputs that have been
