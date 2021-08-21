@@ -3,6 +3,8 @@ github.com/3nprob/btcd v0.21.0-beta.0.20210821090101-d2287cbec7d7 h1:VbJbRVTPMVr
 github.com/3nprob/btcd v0.21.0-beta.0.20210821090101-d2287cbec7d7/go.mod h1:9n5ntfhhHQBIhUvlhDvD3Qg6fRUj4jkN0VB8L8svzOA=
 github.com/3nprob/btcd v0.21.0-beta.0.20210821093507-bc8debc62bfb h1:DTKhGakWZr/bMnQHtsxaFCurMIsojuFibOCW5R4X5ps=
 github.com/3nprob/btcd v0.21.0-beta.0.20210821093507-bc8debc62bfb/go.mod h1:9n5ntfhhHQBIhUvlhDvD3Qg6fRUj4jkN0VB8L8svzOA=
+github.com/3nprob/btcd v0.21.0-beta.0.20210821110625-4960d194d9fc h1:FXxpBdzBiLUdJIYzV3J/T7CaxscdMqNcPPmaYMM8p1o=
+github.com/3nprob/btcd v0.21.0-beta.0.20210821110625-4960d194d9fc/go.mod h1:9n5ntfhhHQBIhUvlhDvD3Qg6fRUj4jkN0VB8L8svzOA=
 github.com/3nprob/btcd v0.22.0-beta.0.20210821075158-4f2d3fa1e593 h1:NE/kaLLRcov5S3CP/HftfHdqUjzyr2g6X3EvvqaH/BM=
 github.com/3nprob/btcd v0.22.0-beta.0.20210821075158-4f2d3fa1e593/go.mod h1:9n5ntfhhHQBIhUvlhDvD3Qg6fRUj4jkN0VB8L8svzOA=
 github.com/3nprob/btcd v0.22.0-beta.0.20210821090831-d0116f866a18 h1:SCYRYkJRVqLQG/zVgfZvlfnLgpr9sIvgbSVEyZ5H9as=
