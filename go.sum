@@ -3,6 +3,8 @@ github.com/3nprob/btcd v0.21.0-beta.0.20210821090101-d2287cbec7d7 h1:VbJbRVTPMVr
 github.com/3nprob/btcd v0.21.0-beta.0.20210821090101-d2287cbec7d7/go.mod h1:9n5ntfhhHQBIhUvlhDvD3Qg6fRUj4jkN0VB8L8svzOA=
 github.com/3nprob/btcd v0.22.0-beta.0.20210821075158-4f2d3fa1e593 h1:NE/kaLLRcov5S3CP/HftfHdqUjzyr2g6X3EvvqaH/BM=
 github.com/3nprob/btcd v0.22.0-beta.0.20210821075158-4f2d3fa1e593/go.mod h1:9n5ntfhhHQBIhUvlhDvD3Qg6fRUj4jkN0VB8L8svzOA=
+github.com/3nprob/btcd v0.22.0-beta.0.20210821090831-d0116f866a18 h1:SCYRYkJRVqLQG/zVgfZvlfnLgpr9sIvgbSVEyZ5H9as=
+github.com/3nprob/btcd v0.22.0-beta.0.20210821090831-d0116f866a18/go.mod h1:9n5ntfhhHQBIhUvlhDvD3Qg6fRUj4jkN0VB8L8svzOA=
 github.com/3nprob/btcwallet v0.12.1-0.20210821075949-9e76b57a00c0/go.mod h1:mUTHnbupjg/eEwWHr0Sza12EHgoXRD6ldWFtiuHK+To=
 github.com/3nprob/btcwallet v0.12.1-0.20210821082034-4eb0a556189d h1:6OCMQN01w+ChU8E9f9zgW69UCMKnphKZifBJDtW5/Nw=
 github.com/3nprob/btcwallet v0.12.1-0.20210821082034-4eb0a556189d/go.mod h1:qjDudv3TWHcMxtJzruwx37Jte0KbHB7fSzLPHP1Q2vw=
