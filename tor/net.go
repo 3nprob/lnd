@@ -53,6 +53,9 @@ type ClearNet struct {
 	// SOCKS is the host:port for SOCKS5 proxy to use for clearnet connections.
 	SOCKS string
 
+	// SOCKSAuth contains credentials to use for authentication to SOCKS proxy.
+	SOCKSAuth *proxy.Auth
+
 	// NoProxyTargets is a string of comma-separated values
 	// specifying hosts that should bypass the proxy. Each value is either an
 	// IP address, a CIDR range, a zone (*.example.com) or a host name
@@ -66,7 +69,7 @@ func (r *ClearNet) createDialer(auth *proxy.Auth, timeout time.Duration) (Dialer
 	if r.SOCKS == "" {
 		return clearDialer, nil
 	}
-	dialer, err := proxy.SOCKS5("tcp", r.SOCKS, auth, clearDialer)
+	dialer, err := proxy.SOCKS5("tcp", r.SOCKS, r.SOCKSAuth, clearDialer)
 	if err != nil {
 		return nil, err
 	}
