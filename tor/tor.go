@@ -63,16 +63,8 @@ func (c *proxyConn) RemoteAddr() net.Addr {
 }
 
 func (pn *ProxyNet) createDialer(auth *proxy.Auth, timeout time.Duration) (Dialer, error) {
-	var clearProxyAuth *proxy.Auth
-	var err error
-	if pn.StreamIsolation {
-		clearProxyAuth, err = randomAuth()
-		if err != nil {
-			return nil, err
-		}
-	}
-	var clearDialer Dialer
-	clearDialer, err = pn.ClearNet.createDialer(clearProxyAuth, timeout)
+	cn := &ClearNet{}
+	clearDialer, err := cn.createDialer(nil, timeout)
 	if err != nil {
 		return nil, err
 	}
@@ -96,6 +88,7 @@ func randomAuth() (*proxy.Auth, error) {
 		Password: hex.EncodeToString(b[8:]),
 	}, nil
 }
+
 // dial establishes a connection to the address via the provided TOR SOCKS
 // proxy. Only TCP traffic may be routed via Tor.
 //

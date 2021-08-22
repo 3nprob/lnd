@@ -3,6 +3,7 @@ package tor
 import (
 	"context"
 	"errors"
+	"fmt"
 	"net"
 	"time"
 
@@ -70,6 +71,7 @@ func (r *ClearNet) createDialer(auth *proxy.Auth, timeout time.Duration) (Dialer
 	if err != nil {
 		return nil, err
 	}
+	fmt.Println("Using per host dialer for request")
 	perHostDialer := proxy.NewPerHost(dialer, clearDialer)
 	perHostDialer.AddFromString(r.NoProxyTargets)
 	return perHostDialer, nil

@@ -939,10 +939,7 @@ func ValidateConfig(cfg Config, usageMessage string,
 			ClearNet:        clearNet,
 		}
 		if !cfg.Tor.SkipProxyForClearNetTargets {
-			torNet.ClearNet = &tor.ClearNet{
-				SOCKS:          cfg.Tor.SOCKS,
-				NoProxyTargets: cfg.Tor.NoProxyTargets,
-			}
+			torNet.ClearNet = clearNet
 		}
 		cfg.net = torNet
 	} else {
