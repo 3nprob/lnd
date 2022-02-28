@@ -24,7 +24,7 @@ RUN apk add --no-cache --update alpine-sdk \
 &&  git clone $git_url /go/src/github.com/lightningnetwork/lnd \
 &&  cd /go/src/github.com/lightningnetwork/lnd \
 &&  git checkout $checkout \
-&&  make release-install
+&&  make release-install tags='autopilotrpc chainrpc invoicesrpc monitoring routerrpc signrpc verrpc walletrpc watchtowerrpc wtclientrpc dev'
 
 # Start a new, final image.
 FROM alpine as final
