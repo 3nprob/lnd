@@ -415,6 +415,7 @@ github.com/lightningnetwork/lnd/ticker v1.1.0 h1:ShoBiRP3pIxZHaETndfQ5kEe+S4NdAY
 github.com/lightningnetwork/lnd/ticker v1.1.0/go.mod h1:ubqbSVCn6RlE0LazXuBr7/Zi6QT0uQo++OgIRBxQUrk=
 github.com/lightningnetwork/lnd/tlv v1.1.0 h1:gsyte75HVuA/X59O+BhaISHM6OobZ0YesPbdu+xG1h0=
 github.com/lightningnetwork/lnd/tlv v1.1.0/go.mod h1:0+JKp4un47MG1lnj6jKa8woNeB1X7w3yF4MZB1NHiiE=
+github.com/lightningnetwork/lnd/tor v1.0.0 h1:wvEc7I+Y7IOtPglVP3cVBbYhiVhc7uTd7cMF9gQRzwA=
 github.com/lightningnetwork/lnd/tor v1.0.0/go.mod h1:RDtaAdwfAm+ONuPYwUhNIH1RAvKPv+75lHPOegUcz64=
 github.com/lightningnetwork/lnd/tor v1.1.0 h1:iXO7fSzjxTI+p88KmtpbuyuRJeNfgtpl9QeaAliILXE=
 github.com/lightningnetwork/lnd/tor v1.1.0/go.mod h1:RDtaAdwfAm+ONuPYwUhNIH1RAvKPv+75lHPOegUcz64=
