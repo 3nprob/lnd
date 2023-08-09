@@ -41,7 +41,7 @@ require (
 	github.com/lightningnetwork/lnd/queue v1.1.0
 	github.com/lightningnetwork/lnd/ticker v1.1.0
 	github.com/lightningnetwork/lnd/tlv v1.1.0
-	github.com/lightningnetwork/lnd/tor v1.1.0
+	github.com/lightningnetwork/lnd/tor v1.0.0
 	github.com/ltcsuite/ltcd v0.0.0-20190101042124-f37f8bf35796
 	github.com/miekg/dns v1.1.43
 	github.com/prometheus/client_golang v1.11.1
@@ -182,7 +182,10 @@ replace github.com/ulikunitz/xz => github.com/ulikunitz/xz v0.5.8
 // https://deps.dev/advisory/OSV/GO-2021-0053?from=%2Fgo%2Fgithub.com%252Fgogo%252Fprotobuf%2Fv1.3.1
 replace github.com/gogo/protobuf => github.com/gogo/protobuf v1.3.2
 
-replace github.com/lightningnetwork/lnd/tor => ./tor
+replace (
+	github.com/lightningnetwork/lnd/tor v0.0.0-local => ./tor
+	github.com/lightningnetwork/lnd/tor v1.0.0 => ./tor
+)
 
 // If you change this please also update .github/pull_request_template.md and
 // docs/INSTALL.md.
